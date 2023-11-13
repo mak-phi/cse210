@@ -27,7 +27,7 @@ public class Journal
                 outputFile.WriteLine($"{savedEntry._date}~|{savedEntry._prompt}~|{savedEntry._response}");
             }
         }
-        Console.WriteLine("Journal saved");
+        Console.WriteLine("Journal saved\n");
     }
 
     public void LoadFromFile(string fileName)
@@ -45,10 +45,10 @@ public class Journal
 
             AddEntry(LoadedEntry);
         }
-        Console.WriteLine("Journal loaded");
+        Console.WriteLine("Journal loaded\n");
 
     }
-    public void Display()
+    public void DisplayAll()
     {
         int count = 0;
         foreach (Entry entry in _entries)

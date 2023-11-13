@@ -31,7 +31,7 @@ class Program
                 break;
 
                 case 2:
-                myJournal.Display();              
+                myJournal.DisplayAll();              
                 break;
 
                 case 3:
