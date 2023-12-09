@@ -9,7 +9,7 @@ public class Order
         _items = new List<Product>();
     }
 
-    public void AddToCart(Product item)
+    public void AddToCart(Product item) // Stretch
     {
         _items.Add(item);
     }
