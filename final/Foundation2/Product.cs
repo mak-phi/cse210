@@ -2,10 +2,10 @@ public class Product
 {
     private string _productName;
     private string _productId;
-    private double _price;
+    private decimal _price;
     private int _quantity;
 
-    public Product(string productName, string productId, double price)
+    public Product(string productName, string productId, decimal price)
     {
         _productName = productName;
         _productId = productId;
@@ -33,12 +33,12 @@ public class Product
         return _productId;
     }
 
-    public void SetPrice(double price)
+    public void SetPrice(decimal price)
     {
         _price = price;
     }
 
-    public double GetPrice()
+    public decimal GetPrice()
     {
         return _price;
     }

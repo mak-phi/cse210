@@ -14,14 +14,24 @@ public class Order
         _items.Add(item);
     }
 
-    public double CalculateTotalPrice()
+    public decimal CalculateTotalPrice()
     {
-        double totalPrice = 0;
+        decimal totalPrice = 0;
+        decimal shippingCost;
+
         foreach (Product item in _items)
         {
             totalPrice += (item.GetPrice() * item.GetQuantity());
         }
-        return totalPrice;
+        if (_customer.IsUSAAddress())
+        {
+            shippingCost = 5;
+        }
+        else
+        {
+            shippingCost = 35;
+        }
+        return totalPrice += shippingCost;
     }
 
     public void GetPackingLabel()
