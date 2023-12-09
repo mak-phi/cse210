@@ -86,7 +86,7 @@ public abstract class Event
         // Lists the type of event, title, and the date.
         Console.WriteLine($"{GetType().ToString().Substring(0,GetType().ToString().Length-5)}");
         Console.WriteLine($"{_title}");
-        Console.WriteLine($"{_time}");
+        Console.WriteLine($"{_date.ToLongDateString()}");
     }
     
 }
