@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.OutputEncoding = Encoding.UTF8; //Tip for showing emoji characters on console courtesy of ucag at https://stackoverflow.com/questions/67508469/how-to-show-emoji-in-c-sharp-console-output
+        Console.OutputEncoding = Encoding.UTF8; //Show emoji characters: https://stackoverflow.com/questions/67508469/how-to-show-emoji-in-c-sharp-console-output
 
         List<Video> myVideos = new List<Video>();
         
