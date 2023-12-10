@@ -24,7 +24,7 @@ public class OutdoorEvent : Event
 
     public override void GenerateFullMessage()
     {
-        Console.WriteLine($"{GetType().ToString().Substring(0,GetType().ToString().Length-5)}");
+        Console.WriteLine($"{GetType().ToString().Substring(0,GetType().ToString().Length-5)}"); // https://stackoverflow.com/questions/20928315/how-can-i-slice-a-string-in-c
         Console.WriteLine($"{GetTitle()}");
         Console.WriteLine($"{GetDate().ToLongDateString()} | {GetTime()}");
         Console.WriteLine($"{GetDescription()}");

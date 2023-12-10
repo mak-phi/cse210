@@ -84,7 +84,7 @@ public abstract class Event
     public void GenerateShortDescription()
     {
         // Lists the type of event, title, and the date.
-        Console.WriteLine($"{GetType().ToString().Substring(0,GetType().ToString().Length-5)}");
+        Console.WriteLine($"{GetType().ToString().Substring(0,GetType().ToString().Length-5)}"); // https://stackoverflow.com/questions/20928315/how-can-i-slice-a-string-in-c
         Console.WriteLine($"{_title}");
         Console.WriteLine($"{_date.ToLongDateString()}");
     }
