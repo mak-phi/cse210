@@ -1,0 +1,57 @@
+public class Activity
+{
+    private DateTime _date;
+    private int _duration;
+
+    public Activity()
+    {
+        // Empty constructor
+    }
+
+    public Activity(DateTime date, int length)
+    {
+        _date = date;
+        _duration = length;
+    }
+
+    public void SetDate(int year, int month, int day)
+    {
+        _date = new DateTime(year, month, day);
+    }
+
+    public DateTime GetDate()
+    {
+        return _date;
+    }
+
+    public void SetDuration(int length)
+    {
+        _duration = length;
+    }
+
+    public int GetDuration()
+    {
+        return _duration;
+    }
+
+    public virtual double CalculateDistance()
+    {
+        return -1; // To override
+    }
+
+    public virtual double CalculateSpeed()
+    {
+        return -1; // Default; to override
+    }
+
+    public virtual double CalculatePace()
+    {
+        return -1; // Default; to override
+    }
+
+    public string GetSummary()
+    {
+    //  03 Nov 2022 Running (30 min): Distance: 4.8 km, Speed: 9.7 kph, Pace: 6.25 min per km
+    return $"{GetDate().ToString("dd MMM yyy")} {GetType().ToString()[..^8]} ({GetDuration()} min)- Distance: {CalculateDistance():0.0#} km, Speed: {CalculateSpeed():0.0#} kph, Pace: {CalculatePace():0.0#} min per km";   
+    }
+}
