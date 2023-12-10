@@ -52,6 +52,9 @@ public class Activity
     public string GetSummary()
     {
     //  03 Nov 2022 Running (30 min): Distance: 4.8 km, Speed: 9.7 kph, Pace: 6.25 min per km
-    return $"{GetDate().ToString("dd MMM yyy")} {GetType().ToString()[..^8]} ({GetDuration()} min)- Distance: {CalculateDistance():0.0#} km, Speed: {CalculateSpeed():0.0#} kph, Pace: {CalculatePace():0.0#} min per km";   
+    return $"{GetDate().ToString("dd MMM yyy")} {GetType().ToString()[..^8]} ({GetDuration()} min)- Distance: {CalculateDistance():0.0#} km, Speed: {CalculateSpeed():0.0#} kph, Pace: {CalculatePace():0.0#} min per km";
+    // https://stackoverflow.com/questions/15546953/convert-date-to-dd-mmm-yyyy-format-c-sharp
+    // https://stackoverflow.com/questions/20928315/how-can-i-slice-a-string-in-c
+    // https://stackoverflow.com/questions/15288134/how-to-display-values-only-upto-2-decimal-places
     }
 }
