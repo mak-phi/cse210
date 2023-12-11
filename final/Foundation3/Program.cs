@@ -33,7 +33,6 @@ class Program
         string weatherCondition = "28°C, Clouds followed by a brightening sky";
         OutdoorEvent outdoorEvent= new OutdoorEvent(title, description, date, time, venue, weatherCondition);
         events.Add(outdoorEvent);
-        OutdoorEvent outdoorEvent2= new OutdoorEvent();
 
         foreach (Event activity in events)
         {
