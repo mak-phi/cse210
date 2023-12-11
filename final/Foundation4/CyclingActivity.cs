@@ -7,7 +7,7 @@ public class CyclingActivity : Activity
         // Empty constructor
     }
 
-    public CyclingActivity(DateTime date, int length, double speed) : base(date, length)
+    public CyclingActivity(DateTime date, int duration, double speed) : base(date, duration)
     {
         _speed = speed;
     }
@@ -25,7 +25,6 @@ public class CyclingActivity : Activity
     public override double CalculateDistance()
     {
         return (_speed / 60) * GetDuration();
-
     }
 
     public override double CalculateSpeed()

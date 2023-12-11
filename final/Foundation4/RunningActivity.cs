@@ -7,7 +7,7 @@ public class RunningActivity : Activity
         // Empty constructor
     }
 
-    public RunningActivity(DateTime date, int length, double distance) : base(date, length)
+    public RunningActivity(DateTime date, int duration, double distance) : base(date, duration)
     {
         _distance = distance;
     }

@@ -7,7 +7,7 @@ public class SwimmingActivity : Activity
         // Empty constructor
     }
 
-    public SwimmingActivity(DateTime date, int length, int numOfLaps) : base(date, length)
+    public SwimmingActivity(DateTime date, int duration, int numOfLaps) : base(date, duration)
     {
         _numOfLaps = numOfLaps;
     }

@@ -8,10 +8,10 @@ public class Activity
         // Empty constructor
     }
 
-    public Activity(DateTime date, int length)
+    public Activity(DateTime date, int duration)
     {
         _date = date;
-        _duration = length;
+        _duration = duration;
     }
 
     public void SetDate(int year, int month, int day)
@@ -24,9 +24,9 @@ public class Activity
         return _date;
     }
 
-    public void SetDuration(int length)
+    public void SetDuration(int duration)
     {
-        _duration = length;
+        _duration = duration;
     }
 
     public int GetDuration()
